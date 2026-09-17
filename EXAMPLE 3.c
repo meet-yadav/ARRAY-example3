@@ -12,8 +12,9 @@ int main()
  */
   int i,len, carry=1;
 
-  printf(" enter the binary number : ");
-  scanf("%S", a);
+  printf("enter the binary number : ");
+  scanf("%s", a);
+  printf("\n");
  // strlen() finds the length of the sring.
   len = strlen(a);
 
@@ -34,7 +35,7 @@ int main()
            a[i]= '0';
         
     }
-    printf("1'S COMPLEMENT : %S\n\n",a);
+    printf(" ##### 1'S COMPLEMENT : %s #####\n\n",a);
 
       // ** FINDING THE 2'S COMPLEMENT ** //
 
@@ -52,12 +53,10 @@ int main()
       }
 // if the current bit is 1,then moves to the next bit on left.
       else 
-      
-        a[i] = '0';
-      
-    }
+       a[i] = '0';
+      }
 
-    printf(" 2's complement = %s \n",a);
+    printf("  #####  2's complement = %s ######\n",a);
 
    return 0;
 }
